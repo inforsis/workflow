@@ -2,6 +2,7 @@
 	nodejs.org
 
 - Instalar dependencias globais via npm
+	npm install grunt
 	npm install grunt-cli
 	npm install sass
 	
