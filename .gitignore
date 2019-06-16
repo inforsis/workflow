@@ -1,0 +1,15 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# misc
+.DS_Store
+
+#harp
+/harp
+
+#webpack
+/webpack
+
+#webpack4-pug-sass-example
+/webpack4-pug-sass-example
+
+npm-debug.log*
