@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* ==========================================================================
+@Code by Jadson Moreira - jadsonmoreira.com - @inforsis
+@Description: Folha de Estilo principal do projeto [NOME DO PROJETO]
+@versão: 0.0.1
+@since: month/year
+========================================================================== */
+/* ==========================================================================
+	SETTINGS
+	- Camada com configuraçoes basicas da sua arquitetura
+========================================================================== */
+@import 'settings/settings';
+/* ==========================================================================
+	TOOLS
+	- Camda com mixins e funções necessarias para o layout
+========================================================================== */ 
+@import 'tools/tools';
+/* ==========================================================================
+	GENERIC
+	- Camada com propriedades mais genericas e com a menor especificidade
+	  possivel
+========================================================================== */
+@import 'generic/generic';
+/* ==========================================================================
+	ELEMENTS
+	- Camada com estilizações basicas
+========================================================================== */
+@import 'elements/elements';
+/* ==========================================================================
+	COMPONENTS
+	- Camada Partes de uma interface com estilos mais definidos e especificos
+========================================================================== */
+@import 'components/components';
+/* ==========================================================================
+	HELPERS
+	- Camadas com seletores que trazem estilos que devem ganhar de todos os
+	  outros
+========================================================================== */
+@import 'helpers/helpers'; 
