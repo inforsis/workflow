@@ -12,8 +12,14 @@
 - Gerar modernizr na pasta js
 	modernizr -c modernizr-config.json -d js/ -u
 
-- Copiar arquivos da node_modules
+- Compilação inicial do projeto
 	grunt build
+		- Copiar arquivos da node_modules
+			- grunt copy
+		- Compila o scss
+			- grunt sass
+		- Inicia o monitoramento de alterações nos arquivos .css e .scss
+			- grunt watch
 
 - Iniciar servidor
 	npm run server
