@@ -15,11 +15,11 @@
 - Compilação inicial do projeto
 	grunt build
 		- Copiar arquivos da node_modules
-			- grunt copy
+			grunt copy
 		- Compila o scss
-			- grunt sass
+			grunt sass
 		- Inicia o monitoramento de alterações nos arquivos .css e .scss
-			- grunt watch
+			grunt watch
 
 - Iniciar servidor
 	npm run server
