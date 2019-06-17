@@ -19,7 +19,7 @@
 	npm run server
 	
 - Compilar o scss
-	grunt sass
+	grunt css
 
 - Iniciar o watch
 	grunt watch
