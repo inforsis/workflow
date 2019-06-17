@@ -1,12 +1,14 @@
 OBJECTS
 
-Camada onde iremos ter nossos pequenos ìobjetosî, que nada mais s„o que pequenos pedaÁos da interface:
+	Camada onde comecamos a declarar a estrutura dos nossos componentes:	
+		
+		camada onde iremos ter nossos pequenos ‚Äúobjetos‚Äù, que nada mais s√£o que pequenos peda√ßos da interface. Normalmente padr√µes 		   de design, que se repetem em todo o seu site. √â onde come√ßamos a declarar a estrutura dos nossos componentes;
 
-	Objetos s„o pequenos pedaÁos de uma interface, normalmente padrıes de design, que se repetem em todo o seu site. 
+		em geral, padr√µes que se repetem por todo o site e que podem ter ou n√£o uma camada visual por cima;
 
-	em geral, padrıes que se repetem por todo o site e que podem ter ou n„o uma camada visual por cima.
+		objetos media, .button e .ui-list s√£o alguns que se encaixam nesta camada;
 
-	Objetos media, .button e .ui-list s„o alguns que se encaixam nesta camada;
+		utilizar apenas classes;
 
-	Utilizar apenas classes;
+
 
