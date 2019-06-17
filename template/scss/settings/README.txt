@@ -1,9 +1,8 @@
 SETTINGS
+	Camada onde declaramos as configuraÃ§Ãµes do nosso projeto, como variÃ¡veis de medidas, cores, etc:
 
-Configurações básicas da sua arquitetura:
+		variÃ¡veis globais de cores, espaÃ§amento e outras configuracoes;
 
-	variáveis globais de cores, espaçamento e outras configuracoes;
+		variÃ¡veis que ativam mÃ³dulos do seu framework/UI Kit;
 
-	variáveis que ativam módulos do seu framework/UI Kit;
-
-	nada aqui será gerado como CSS final, sendo somente utilizado na criação.
+		nada aqui serÃ¡ gerado como CSS final, sendo somente utilizado na criaÃ§Ã£o.
