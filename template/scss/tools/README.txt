@@ -1,9 +1,10 @@
-TOOLS 
+TOOLS
+	
 
-Camada para todos os seus mixins e funções necessárias para a construção de seus layouts:
+	Camada com mixins, funcoes, placeholders, etc:
+		
+		mixins de font-face, atÃ© mixins de animaÃ§Ãµes, placeholders, etc;
 
-	mixins de font-face, até mixins de animações, etc;
+		importacao de fonts;
 
-	importacao de fonts;
-
-	Repare que aqui, nada é gerado diretamente como CSS final também.
+		nada Ã© gerado diretamente como CSS final tambÃ©m.
