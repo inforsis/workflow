@@ -1,7 +1,9 @@
 BASE/ELEMENTS
 
-Aqui definimos a aparÍncia de <a>, <blockquote>, <ul>, <h1> e todos os outros elementos HTML desejados.
-	
-	lembre-se s„o estilizaÁıes B¡SICAS, nada de estilizar tudo aqui!
+	Essa camada serve para estilizarmos a parte mais b√°sica dos componentes. Nada de IDs nem classes aqui, apenas seletores de elementos.
 
-	aqui ficar„o estilos para os headings h1-h6, blockquotes, a, buttons, etc;
+		Aqui definimos a apar√™ncia de <a>, <blockquote>, <ul>, <h1> e todos os outros elementos HTML desejados.
+
+		lembre-se s√£o estiliza√ß√µes B√ÅSICAS, nada de estilizar tudo aqui!
+
+		aqui ficar√£o estilos para os headings h1-h6, blockquotes, a, buttons, etc;
