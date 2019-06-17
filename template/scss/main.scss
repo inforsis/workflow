@@ -5,35 +5,50 @@
 @versão: 0.0.1
 @since: month/year
 ========================================================================== */
-/* ==========================================================================
-	SETTINGS
-	- Camada com configuraçoes basicas da sua arquitetura
-========================================================================== */
+//===========================================================================
+//	SETTINGS
+//	- Camada onde declaramos as configurações do nosso projeto, como
+//    variáveis de medidas, cores, etc.
+//===========================================================================
 @import 'settings/settings';
-/* ==========================================================================
-	TOOLS
-	- Camda com mixins e funções necessarias para o layout
-========================================================================== */ 
+
+//===========================================================================
+//	TOOLS
+//	- Camada com mixins, funcoes, placeholders, etc.
+//=========================================================================== 
 @import 'tools/tools';
-/* ==========================================================================
-	GENERIC
-	- Camada com propriedades mais genericas e com a menor especificidade
-	  possivel
-========================================================================== */
+
+//===========================================================================
+//	GENERIC
+//	- Camada com propriedades mais genericas e com a menor especificidade
+//	  possivel. Normalmente usado para quando queremos usar o seletor *
+//===========================================================================
 @import 'generic/generic';
-/* ==========================================================================
-	ELEMENTS
-	- Camada com estilizações basicas
-========================================================================== */
+
+//===========================================================================
+//	ELEMENTS/BASE
+//	- Essa camada serve para estilizarmos a parte mais basica dos
+//    componentes. Nada de IDs nem classes aqui, apenas seletores
+//    de elementos.
+//===========================================================================
 @import 'elements/elements';
-/* ==========================================================================
-	COMPONENTS
-	- Camada Partes de uma interface com estilos mais definidos e especificos
-========================================================================== */
+
+//===========================================================================
+//	OBJECTS
+//	- Camada onde comecamos a declarar a estrutura dos nossos componentes.
+//===========================================================================
+@import 'objects/objects';
+
+//===========================================================================
+//	COMPONENTS
+//	- Camada onde começamos a estilizar os nossos componentes de forma mais
+//	  especifica.
+//===========================================================================
 @import 'components/components';
-/* ==========================================================================
-	HELPERS
-	- Camadas com seletores que trazem estilos que devem ganhar de todos os
-	  outros
-========================================================================== */
+
+//===========================================================================
+//	HELPERS
+//	- Camadas com seletores que trazem estilos que devem ganhar de todos os
+//	  outros.
+//===========================================================================
 @import 'helpers/helpers'; 
