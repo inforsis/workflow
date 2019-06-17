@@ -17,10 +17,10 @@
 
 - Iniciar servidor
 	npm run server
+	
+- Compilar o scss
+	grunt sass
 
 - Iniciar o watch
 	grunt watch
-
-- Compilar o scss
-	grunt sass
 
