@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* ==========================================================================
+@Code by Jadson Moreira - jadsonmoreira.com - @inforsis
+@Description: Folha de Estilo principal do projeto [NOME DO PROJETO]
+@versão: 0.0.1
+@since: month/year
+========================================================================== */
+//===========================================================================
+//	SETTINGS
+//	- Camada onde declaramos as configurações do nosso projeto, como
+//    variáveis de medidas, cores, etc.
+//===========================================================================
+@import 'settings/settings';
+
+//===========================================================================
+//	TOOLS
+//	- Camada com mixins, funcoes, placeholders, etc.
+//=========================================================================== 
+@import 'tools/tools';
+
+//===========================================================================
+//	GENERIC
+//	- Camada com propriedades mais genericas e com a menor especificidade
+//	  possivel. Normalmente usado para quando queremos usar o seletor *
+//===========================================================================
+@import 'generic/generic';
+
+//===========================================================================
+//	HELPERS
+//	- Camadas com seletores que trazem estilos que devem ganhar de todos os
+//	  outros.
+//===========================================================================
+@import 'helpers/helpers'; 
+ 

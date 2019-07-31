@@ -1,0 +1,19 @@
+//variaveis
+@import '../../../scss/main.scss';
+
+pre {
+	color: $primary-color2;
+	padding: 15px;
+	color: red;
+	i {
+		font-family: 'Material Icons';
+		color: pink;
+		font-size: 24px; 
+	}
+}
+body {
+	height: 100%;
+	width: 100%;
+	//background-image: url('../img/logo-react-icon.png');
+	//background-repeat: no-repeat;
+}
