@@ -2,12 +2,12 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url(fonts/MaterialIcons-Regular.woff2) format('woff2'),
-       url(fonts/MaterialIcons-Regular.woff) format('woff'),
-       url(fonts/MaterialIcons-Regular.ttf) format('truetype');
+       url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(../fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
 .material-icons {
@@ -399,6 +399,6 @@ pre {
 body {
   height: 100%;
   width: 100%;
-  background-image: url(img/56fffb0408e7a47addd3b859ab406729.png);
+  background-image: url(../img/logo-webpack-icon.png);
   background-repeat: no-repeat; }
 

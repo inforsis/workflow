@@ -1,11 +1,12 @@
 const path = require('path')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")  
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {  
     entry: './src/index.js',
 
     output: {  
-        path: path.resolve(__dirname, 'public'),  
+        path: path.resolve(__dirname, 'public'), 
         filename: 'main.js'  
     },  
     /* The stats option lets you control what bundling information to display. */
@@ -15,7 +16,8 @@ module.exports = {
             children: false, // Hide children information
             maxModules: 0 // Set the maximum number of modules to be shown
         },
-        publicPath: '/public/',
+        open: true,
+        contentBase: path.join(__dirname, 'public'),
         port: 3001
     },
     module: {  
@@ -33,37 +35,56 @@ module.exports = {
             {  
                 test: /\.scss$/,  
                 use: [  
-                    { loader: MiniCssExtractPlugin.loader },  
-                    "css-loader",  
-                    "sass-loader"  
-                ]  
+                        {
+                            loader: MiniCssExtractPlugin.loader,
+                            options: {
+                                publicPath: '../'
+                            }
+                        },  
+                        "css-loader",  
+                        "sass-loader" 
+                        
+                    ]  
             },
             {  
                 test: /\.(png|jpg|svg)$/,  
                 use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            outputPath: 'img/'
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: '[name].[ext]',
+                                outputPath: 'img/'
+                            }
                         }
-                    }
-                ]  
+                    ]  
             },
             {
                 test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'fonts/'
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                name: '[name].[ext]',
+                                outputPath: 'fonts/'
+                            }
                         }
+                    ]
+            },
+            {
+            test: /\.html$/,
+            use: [
+                    {
+                        loader: "html-loader"
                     }
                 ]
             } 
         ]  
     }, 
-    plugins: [  
+    plugins: [ 
+        new HtmlWebpackPlugin({
+            template: "./src/index.html",
+            filename: "./index.html"
+        }), 
         new MiniCssExtractPlugin({  
             filename: "css/[name].css"  
         })   
